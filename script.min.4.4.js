@@ -963,7 +963,7 @@ function setIcons() {
     $(".lock").append("<div class='icon inactive'><i class='fa fa-lock'></i></div>").append("<div class='icon active'><i class='fa fa-unlock-alt'></i></div>");
     $(".motion").append("<div class='icon inactive'><i class='fa opaque fa-exchange'></i></div>").append("<div class='icon active'><i class='fa fa-exchange'></i></div>");
     $(".presence").append("<div class='icon inactive'><i class='fa opaque fa-user'></i></div>").append("<div class='icon active'><i class='fa fa-user' style='color:#59FF00'></i></div>");
-    $(".contact").append("<div class='icon inactive'><i class='r45 fa fa-compress'></i></div>").append("<div class='icon active'><i class='r45 fa fa-expand' style='color:red'></i></div>");
+    $(".contact").append("<div class='icon inactive'><i class='r45 fa fa-compress' style='color:red'></i></div>").append("<div class='icon active'><i class='r45 fa fa-expand' style='color:red'></i></div>");
     $(".water").append("<div class='icon inactive'><i class='fa opaque fa-tint'></i></div>").append("<div class='icon active'><i class='fa fa-tint'></i></div>");
     $(".momentary").append("<div class='icon'><i class='fa fa-circle-o'></i></div>");
     $(".camera").append("<div class='icon'><i class='fa fa-camera'></i></div>");
