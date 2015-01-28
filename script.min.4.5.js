@@ -983,7 +983,6 @@ function setIcons() {
     $(".energy").append("<div class='footer'><i class='fa fa-fw wi wi-lightning'></i></div>");
     $(".power").append("<div class='footer'><i class='fa fa-fw fa-bolt'></i></div>");
     $(".battery").append("<div class='footer'>t.battery</div>");
-	            $(".refresh .footer").html("Updated " + t.updated);
     $(".tile[data-is-value=true]").each(function() {
         renderValue($(this))
     })
