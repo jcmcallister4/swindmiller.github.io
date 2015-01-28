@@ -959,10 +959,10 @@ function spinner(e) {
 }
 
 function setIcons() {
-    $(".switch, .dimmer").append("<div class='icon inactive'><i class='fa opaque fa-lightbulb-o'></i></div>").append("<div class='icon active'><i class='fa fa-lightbulb-o' style='color:#FFFF00'></i></div>");
+    $(".switch, .dimmer").append("<div class='icon inactive'><i class='fa fa-toggle-off'></i></div>").append("<div class='icon active'><i class='fa fa-toggle-on'></i></div>");
     $(".lock").append("<div class='icon inactive'><i class='fa fa-lock'></i></div>").append("<div class='icon active'><i class='fa fa-unlock-alt'></i></div>");
     $(".motion").append("<div class='icon inactive'><i class='fa opaque fa-exchange'></i></div>").append("<div class='icon active'><i class='fa fa-exchange'></i></div>");
-    $(".presence").append("<div class='icon inactive'><i class='fa opaque fa-user'></i></div>").append("<div class='icon active'><i class='fa fa-user' style='color:#59FF00'></i></div>");
+    $(".presence").append("<div class='icon inactive'><i class='fa opaque fa-map-marker'></i></div>").append("<div class='icon active'><i class='fa fa-map-marker'></i></div>");
     $(".contact").append("<div class='icon inactive'><i class='r45 fa fa-compress'></i></div>").append("<div class='icon active'><i class='r45 fa fa-expand'></i></div>");
     $(".water").append("<div class='icon inactive'><i class='fa opaque fa-tint'></i></div>").append("<div class='icon active'><i class='fa fa-tint'></i></div>");
     $(".momentary").append("<div class='icon'><i class='fa fa-circle-o'></i></div>");
