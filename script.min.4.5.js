@@ -1008,13 +1008,6 @@ function renderWeather(e) {
     e.html(n)
 }
 
-function renderTempHumidity(e) {
-    var t = JSON.parse(e.attr("data-weather"));
-    e.empty();
-    var n = "<div class='title'>" + e.attr("data-city") + </i></div>";
-    e.html(n)
-}
-
 function sendCommand(e, t, n, r) {
     var i = getUrlParameter("access_token");
     var s = {
