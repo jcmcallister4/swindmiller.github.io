@@ -979,7 +979,9 @@ function setIcons() {
         renderWeather($(this))
     });
     $(".humidity").append("<div class='footer'><i class='fa fa-fw wi wi-sprinkles'></i></div>");
-    $(".temperature").append("<div class='footer'><i class='fa fa-fw wi wi-thermometer'></i></div>");
+    $(".temperature").each(function() {
+        renderTempHumidity($(this))
+    });
     $(".energy").append("<div class='footer'><i class='fa fa-fw wi wi-lightning'></i></div>");
     $(".power").append("<div class='footer'><i class='fa fa-fw fa-bolt'></i></div>");
     $(".battery").append("<div class='footer'><i class='fa fa-fw batt'></i></div>");
@@ -1005,6 +1007,13 @@ function renderWeather(e) {
     var t = JSON.parse(e.attr("data-weather"));
     e.empty();
     var n = "<div class='title'>" + e.attr("data-city") + "<br/><span class='title2'>" + t.weather + ", feels like " + t.feelsLike + "&deg;</span></div>\n<div class='icon'><span class='text'>" + t.temperature + "&deg;</span><i class='wi " + t.icon + "'></i></span></div>\n<div class='footer'>" + t.localSunrise + " <i class='fa fa-fw wi wi-horizon-alt'></i> " + t.localSunset + "</div>\n<div class='footer right'>" + t.percentPrecip + "%<i class='fa fa-fw fa-umbrella'></i><br>" + t.humidity + "%<i class='fa fa-fw wi wi-sprinkles'></i></div>";
+    e.html(n)
+}
+
+function renderTempHumidity(e) {
+    var t = JSON.parse(e.attr("data-weather"));
+    e.empty();
+    var n = "<div class='title'>" + e.attr("data-city") + </i></div>";
     e.html(n)
 }
 
